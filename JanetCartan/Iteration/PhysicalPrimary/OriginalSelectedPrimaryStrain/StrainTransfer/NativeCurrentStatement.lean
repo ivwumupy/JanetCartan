@@ -1,0 +1,26 @@
+module
+
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.SourceData
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.StrainTransfer.NativeApplicationTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.StrainTransfer.NativeApplicationTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.StrainTransfer.NativeTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.SourceData
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.SourceDataTemplate
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+
+/-! The exact same-node raw correction identity at the original native53
+interface (main:eq:lag-strain). -/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+open scoped ContDiff Matrix.Norms.Frobenius JanetCartan.TensorFrobenius
+
+derive_original_native_identity_statement 0
+
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.StrainTransfer.native_current_eq_statement

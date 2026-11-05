@@ -1,0 +1,37 @@
+module
+
+public import JanetCartan.Iteration.PhysicalMean.OriginalCanonicalSelectionApplication
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalSelectionApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalJointEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonStageApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalJointResponseRegularityTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalLocalWaveGeometryTemplate
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalComparisonCurrentApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+
+/-!
+# The single actual original shift and event
+
+All selected mean/source/normal estimates use `shift` and `event` below.
+The arbitrary-shift trial family and the once-fixed prefix remain unchanged.
+This is an alias of the original native50 existential, not a second sampling
+construction (`new:sec:order-of-choices`).
+-/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+set_option backward.isDefEq.respectTransparency false
+
+construct_original_canonical_selection 0
+construct_original_canonical_selection 1

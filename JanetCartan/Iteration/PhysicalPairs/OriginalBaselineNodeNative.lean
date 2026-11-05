@@ -1,0 +1,17 @@
+module
+public import JanetCartan.Iteration.PhysicalPairs.OriginalBaselineNodeNativeStatements
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+/-! The unchanged actual positive baseline's native demodulation proof on the
+whole original source chart. No parent alias or smaller smoothing chart is
+introduced in this intermediate check. -/
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+publish_original_baseline_amplitude 3

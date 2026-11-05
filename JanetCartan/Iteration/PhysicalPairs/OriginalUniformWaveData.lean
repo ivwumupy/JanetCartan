@@ -1,0 +1,18 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalUniformWaveDataTemplate
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+define_original_uniform_wave_data 0
+define_original_uniform_wave_data 1
+define_original_uniform_wave_data 2
+define_original_uniform_wave_data 3
+define_original_uniform_wave_data 4
+define_original_uniform_wave_data 5
+define_original_uniform_wave_data 6
+define_original_uniform_wave_data 7
+define_original_uniform_wave_data 8
+define_original_uniform_wave_data 9
+define_original_uniform_wave_data 10
+define_original_uniform_wave_data 11

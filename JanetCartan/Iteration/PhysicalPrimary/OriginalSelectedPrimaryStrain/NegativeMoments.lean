@@ -1,0 +1,23 @@
+module
+
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Realization
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.FirstMask.Profiles
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.NegativeMoments.Geometry
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.NegativeMomentsTemplate
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+
+price_actual_primary_negative_source 4
+
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Family.CN_nonneg
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Family.source_geometry
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Family.negative_moments

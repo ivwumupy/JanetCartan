@@ -1,0 +1,19 @@
+module
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AngularStatement
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AngularPrefixTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AngularPrefixTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AngularTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+/-! Original prefix deduction from the precise unprefixed formula. The concrete
+unprefixed producer is supplied in the final Angular module (main:eq:primary-strain). -/
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+check_actual_original_raw_prefix 0
+check_actual_original_raw_prefix 1
+#print axioms JanetCartan.PhysicalPrimary.OriginalRawPrimaryRealization.Actual.prefixed_forward_statement
+#print axioms JanetCartan.PhysicalPrimary.OriginalRawPrimaryRealization.Actual.prefixed_forward_of_unprefixed

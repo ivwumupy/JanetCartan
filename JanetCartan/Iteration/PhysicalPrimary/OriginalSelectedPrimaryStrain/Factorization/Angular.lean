@@ -1,0 +1,21 @@
+module
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AngularBridge
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AngularPrefix
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AngularPrefixTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AngularPrefixTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AngularTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+/-! The original raw full-angular differential, including its unchanged fixed
+prefix, on the same source chart. The completed native-to-actual bridge supplies
+the unprefixed identity to the independent prefix deduction; no new hypothesis
+remains on the actual prefixed endpoint (main:eq:primary-strain; main:eq:lag-strain). -/
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+check_actual_original_raw_prefix 2
+#print axioms JanetCartan.PhysicalPrimary.OriginalRawPrimaryRealization.Actual.unprefixed_forward
+#print axioms JanetCartan.PhysicalPrimary.OriginalRawPrimaryRealization.Actual.prefixed_forward

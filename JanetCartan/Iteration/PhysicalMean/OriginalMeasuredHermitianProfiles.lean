@@ -1,0 +1,57 @@
+module
+
+public import JanetCartan.Iteration.PhysicalMean.OriginalMeasuredHermitianProfilesTemplate
+public import JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEvent
+import all JanetCartan.Iteration.PhysicalMean.OriginalMeasuredHermitianProfilesTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalMeasurementProfilesApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalSampling.OriginalJointEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonStageApplication
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalJointResponseRegularityTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalLocalWaveGeometryTemplate
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalComparisonCurrentApplication
+
+/-!
+# The original full measured Hermitian construction
+
+The coefficient cutoff and actual cut-amplitude jets are the literal existing
+annular measured-row objects. They do NOT cut the unscaled positive baseline:
+that scalar has a nonzero constant tail outside the inner coefficient collar.
+Its full outer-weighted Hermitian profile instead uses the genuine spatial
+carrier and the whole original parent compact. This separate actual construction
+is not a premise counted as closure. Consumer: `app:ch_mean_pairs:eq:comparison-input`.
+-/
+
+@[expose] public noncomputable section
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option backward.isDefEq.respectTransparency false
+set_option Elab.async false
+open scoped ContDiff Matrix.Norms.Frobenius JanetCartan.TensorFrobenius
+
+retain_actual_mean_coefficient_geometry 0
+retain_actual_mean_coefficient_geometry 1
+retain_actual_mean_coefficient_geometry 2
+retain_actual_mean_coefficient_geometry 3
+retain_actual_mean_coefficient_geometry 4
+retain_actual_mean_coefficient_geometry 5
+retain_actual_mean_coefficient_geometry 6
+retain_actual_mean_coefficient_geometry 7
+retain_actual_mean_coefficient_geometry 8
+retain_actual_mean_coefficient_geometry 9
+
+construct_actual_mean_cut_amplitude 0
+construct_actual_mean_cut_amplitude 4
+construct_actual_mean_cut_amplitude 1
+construct_actual_mean_cut_amplitude 2
+construct_actual_mean_cut_amplitude 3

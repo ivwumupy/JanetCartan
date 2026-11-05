@@ -1,0 +1,33 @@
+module
+
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Labels
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.PhaseProfiles
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.ObservedLabelsTemplate
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+
+/-! # Primary labels admitted by the existing signed initial gate
+
+The additional condition is precisely the original graph's numerical
+coefficient threshold, fixed before Picard count and accuracy. The existing
+Tpair supplies it at the final canonical construction. No data are reselected.
+-/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+
+publish_actual_primary_graph_admission 0
+publish_actual_primary_graph_admission 1
+publish_actual_primary_graph_admission 2
+publish_actual_primary_graph_admission 3
+
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Sop
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Sop_ge_two
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.ObservedLabels
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.observedLabel

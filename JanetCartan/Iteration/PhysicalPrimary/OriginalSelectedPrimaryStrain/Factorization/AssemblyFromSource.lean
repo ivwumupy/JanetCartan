@@ -1,0 +1,23 @@
+module
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.Baseline
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.Phase
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.SourceForwardStatement
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AssemblyTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.AssemblyTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalBackgroundHermitianSupportTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalDerivativeTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+/-! Full original raw primary factorization from the exact angular source
+identity, whose producer is supplied by Factorization. All other ingredients
+are actual original producers (main:eq:primary-strain). -/
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+identify_original_raw_primary_factor 0
+identify_original_raw_primary_factor 1
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.raw_factor_statement
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.raw_factor_of_source

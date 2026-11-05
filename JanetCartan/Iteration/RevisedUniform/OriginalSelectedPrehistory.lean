@@ -1,0 +1,62 @@
+module
+
+public import JanetCartan.Iteration.RevisedUniform.OriginalSelectedPrehistoryTemplate
+import all JanetCartan.Iteration.RevisedUniform.OriginalSelectedPrehistoryTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalStaticReach
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalInverseProfilesTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalJointEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonStageApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalJointResponseRegularityTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalLocalWaveGeometryTemplate
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalComparisonCurrentApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+
+/-!
+# The actual original selected prehistory from dimension alone
+
+The only external static inputs are `d` and `hn : 5 ≤ d+1`. The original seed,
+cutoffs, covectors, parameter window, pOrder=1, finite protected margin menu,
+named gamma and source scale are fixed once. The same actual original native
+threshold and Saux are reached at R₀ by a single Tref, before all histories,
+targets and stage accuracies (`main:prop:seed`, `new:sec:order-of-choices`).
+This is initialization, not an assumption that the remaining step succeeds.
+-/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+set_option backward.isDefEq.respectTransparency false
+
+select_original_dimension_ceiling 0
+select_original_dimension_ceiling 1
+select_original_dimension_ceiling 2
+select_original_dimension_ceiling 3
+select_original_dimension_ceiling 4
+select_original_dimension_ceiling 5
+select_original_dimension_ceiling 6
+select_original_dimension_threshold 0
+select_original_dimension_threshold 1
+select_original_dimension_threshold 2
+select_original_dimension_threshold 3
+select_original_dimension_geometry 0
+select_original_dimension_geometry 1
+select_original_dimension_geometry 2
+select_original_dimension_geometry 3
+select_original_dimension_geometry 4
+select_original_dimension_geometry 5
+select_original_dimension_geometry 6
+select_original_dimension_geometry 7
+select_original_dimension_geometry 8
+select_original_dimension_current 0
+select_original_dimension_current 1

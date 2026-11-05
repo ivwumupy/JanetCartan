@@ -1,0 +1,25 @@
+module
+
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Discrepancy.Statement
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.DiscrepancyTemplate
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+
+bound_actual_primary_discrepancy 0
+bound_actual_primary_discrepancy 1
+bound_actual_primary_discrepancy 2
+bound_actual_primary_discrepancy 5
+bound_actual_primary_discrepancy 3
+
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Family.discrepancy_exists
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Family.Cdiscrepancy_nonneg
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Family.discrepancy_bound

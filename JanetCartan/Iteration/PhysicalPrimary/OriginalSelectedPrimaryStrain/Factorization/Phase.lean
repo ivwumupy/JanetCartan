@@ -1,0 +1,20 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.PhaseTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.PhaseTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalBackgroundHermitianSupportTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalDerivativeTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+/-! Exact unchanged source angle at the original history frequency and literal
+graph42/group/node carrier. The proposition and proof are checked separately
+at the original kernel budget (main:eq:primary-strain). -/
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+check_original_primary_carrier 0
+check_original_primary_carrier 1
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.phase_statement
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.phase_eq_original_carrier

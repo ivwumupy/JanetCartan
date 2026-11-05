@@ -1,0 +1,19 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.BaselineTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Factorization.BaselineTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+/-! The actual unscaled original raw baseline and its full source-chart
+regularity, with the same outer-node identity (`main:eq:primary-strain`). -/
+check_actual_raw_baseline_differential 0
+check_actual_raw_baseline_differential 2
+check_actual_raw_baseline_differential 3
+#print axioms JanetCartan.PhysicalPrimary.OriginalRawPrimaryRealization.Actual.baseline_wave
+#print axioms JanetCartan.PhysicalPrimary.OriginalRawPrimaryRealization.Actual.baseline_smooth_on_source
+#print axioms JanetCartan.PhysicalPrimary.OriginalRawPrimaryRealization.Actual.baseline_eq_original_raw

@@ -1,0 +1,44 @@
+module
+public import JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcingProfileTemplate
+public import JanetCartan.Iteration.PhysicalMean.OriginalLeadingContinuumProfile
+import all JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcingProfileTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcingSelected
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcing
+import all JanetCartan.Iteration.PhysicalSampling.OriginalJointEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonStageApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalJointResponseRegularityTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalLocalWaveGeometryTemplate
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalComparisonCurrentApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+public meta import Lean
+public meta import JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcingProfileTemplate
+
+/-!
+# The complete original selected forcing profile
+
+Apply the original leading-comparison producer to the SAME measured target,
+signed sample error and full selected source. Its budget precedes the smoothing
+accuracy, target DATA and history. No source-success or comparison-profile
+hypothesis is introduced (`new:eq:mean-source`, `new:eq:source-bound`).
+-/
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+public meta section
+open Lean Elab Command
+run_cmd liftTermElabM do
+  JanetCartan.PhysicalMean.OriginalCompleteForcingProfileTemplate.publishProfile `JanetCartan.PhysicalMean.OriginalLeadingContinuumProfile.Ccomparison `JanetCartan.PhysicalMean.OriginalLeadingContinuumProfile.Ccomparison_nonneg `JanetCartan.PhysicalMean.OriginalLeadingContinuumProfile.comparison_source_profile
+end
+
+#print axioms JanetCartan.PhysicalMean.OriginalCompleteForcing.selected_full_source_profile

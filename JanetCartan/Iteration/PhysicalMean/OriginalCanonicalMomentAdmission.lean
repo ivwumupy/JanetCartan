@@ -1,0 +1,55 @@
+module
+
+public import JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalJointEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonStageApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalJointResponseRegularityTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalLocalWaveGeometryTemplate
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalComparisonCurrentApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+
+/-!
+# Actual canonical moment admission before sigma and source
+
+The one original bare frame uses the positive half-model tolerance, with
+quadrature order one fixed first. The named original gamma and original ceiling
+are retained. The single static maximum reaches both the original native event
+and task90's fields/profiles on the identical original history and source.
+-/
+
+@[expose] public noncomputable section
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+set_option backward.isDefEq.respectTransparency false
+
+construct_original_canonical_moment_admission 0
+construct_original_canonical_moment_admission 1
+construct_original_canonical_moment_admission 2
+construct_original_canonical_moment_admission 3
+construct_original_canonical_moment_admission 4
+construct_original_canonical_moment_admission 5
+construct_original_canonical_moment_admission 6
+construct_original_canonical_moment_admission 7
+construct_original_canonical_moment_admission 8
+construct_original_canonical_moment_admission 9
+construct_original_canonical_moment_admission 10
+construct_original_canonical_moment_admission 11
+construct_original_canonical_moment_admission 12
+construct_original_canonical_moment_admission 13
+construct_original_canonical_moment_admission 14
+construct_original_canonical_moment_admission 15
+construct_original_canonical_moment_admission 16
+construct_original_canonical_moment_admission 17
+construct_original_canonical_moment_admission 18

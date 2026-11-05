@@ -1,0 +1,40 @@
+module
+
+public import JanetCartan.Iteration.PhysicalMean.OriginalCanonicalBaselineApplication
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalBaselineApplication
+public import JanetCartan.Iteration.PhysicalMean.OriginalBackgroundHermitianSupport
+import all JanetCartan.Iteration.PhysicalSampling.OriginalJointEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonStageApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalJointResponseRegularityTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalLocalWaveGeometryTemplate
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalComparisonCurrentApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+
+/-!
+# The actual unscaled positive canonical baseline
+
+The existing original source53 and graph response give the full corrected
+amplitude on every supported outer carrier. Its auxiliary representative uses
+only the already fixed source observation. In particular vanishing inner
+incidence never removes the positive baseline
+(`app:ch_waves:eq:background-quadrature`, `app:ch_mean_pairs:defn:mean-canonical`).
+-/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+set_option backward.isDefEq.respectTransparency false
+
+construct_actual_canonical_baseline 0
+construct_actual_canonical_baseline 1
+construct_actual_canonical_baseline 2

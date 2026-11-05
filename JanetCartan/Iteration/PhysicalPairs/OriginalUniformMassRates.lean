@@ -1,0 +1,11 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalUniformMassRatesTemplate
+import all JanetCartan.Iteration.PhysicalPairs.OriginalMassRates
+import all JanetCartan.Iteration.PhysicalPairs.OriginalRealMass
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+define_original_uniform_mass_price
+prove_original_uniform_mass_lag
+prove_original_uniform_mass_real_size

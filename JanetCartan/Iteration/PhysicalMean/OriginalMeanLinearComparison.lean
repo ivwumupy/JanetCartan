@@ -1,0 +1,24 @@
+module
+import all JanetCartan.Iteration.PhysicalMean.OriginalMeanLinearComparisonTemplate
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+set_option backward.isDefEq.respectTransparency false
+
+open scoped ContDiff Matrix.Norms.Frobenius JanetCartan.TensorFrobenius
+
+construct_original_mean_linear_comparison_current 1
+construct_original_mean_linear_comparison_current 2
+construct_original_mean_linear_comparison_rates 0
+construct_original_mean_linear_comparison_rates 4
+construct_original_mean_linear_comparison_rates 1
+construct_original_mean_linear_comparison_rates 3
+
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearComparison.retained
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearComparison.before_rates
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearComparison.comparison
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearComparison.correctedMean
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearComparison.real_comparison
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearComparison.actualCcompare

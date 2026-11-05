@@ -1,0 +1,19 @@
+module
+public import JanetCartan.Iteration.PhysicalMean.OriginalSelectedMeanProfileBudgetApplication
+public import JanetCartan.Iteration.PhysicalMean.OriginalSelectedMeanFieldSourceBudgets
+public import JanetCartan.Iteration.PhysicalMean.OriginalSelectedHermitianProfiles
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+/-! The exact prehistory coefficients for the completed/physical mean; no new
+initial threshold is selected after the approximation-dependent Picard count.
+Only actual static117/116 budgets are required, independently of full profiles. -/
+set_option warningAsError true
+set_option Elab.async false
+construct_original_selected_mean_static_budget 0
+construct_original_selected_mean_static_budget 1
+construct_original_selected_mean_static_budget 2
+construct_original_selected_mean_static_budget 3

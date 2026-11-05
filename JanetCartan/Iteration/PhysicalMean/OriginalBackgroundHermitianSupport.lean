@@ -1,0 +1,46 @@
+module
+
+public import JanetCartan.Iteration.PhysicalMean.OriginalBackgroundHermitianSupportTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalBackgroundHermitianSupportTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+
+/-!
+# The entire physical compact and original exterior support
+
+The real positive baseline does not vanish with the inner sampling labels.
+All weighted points instead lie in the unchanged full parent and the actual
+uncut response region. The same complete corrected atom is identified before
+any periodization, Fourier truncation or modulation
+(app:ch_waves:eq:background-quadrature, app:ch_mean_pairs:defn:mean-canonical).
+-/
+
+@[expose] public noncomputable section
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+set_option backward.isDefEq.respectTransparency false
+retain_original_positive_background_support 7
+retain_original_positive_background_support 17
+retain_original_positive_background_support 18
+retain_original_positive_background_support 19
+retain_original_positive_background_support 8
+retain_original_positive_background_support 20
+retain_original_positive_background_support 9
+retain_original_positive_background_support 21
+retain_original_positive_background_support 22
+retain_original_positive_background_support 23
+retain_original_positive_background_support 24
+retain_original_positive_background_support 31
+retain_original_positive_background_support 11
+retain_original_positive_background_support 32
+retain_original_positive_background_support 33
+retain_original_positive_background_support 34
+retain_original_positive_background_support 35

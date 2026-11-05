@@ -1,0 +1,11 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalUniformStageLagTemplate
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+prove_original_uniform_stage_lag 0
+prove_original_uniform_stage_lag 1
+prove_original_uniform_stage_lag 2
+prove_original_uniform_stage_lag 3
+identify_original_uniform_metric_lag

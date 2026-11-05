@@ -1,0 +1,3 @@
+module
+
+public import JanetCartan.Analysis.Microlocal.ArbitraryAccuracy.ProtectedMasks.Uniformity.BoundaryGap.Producer

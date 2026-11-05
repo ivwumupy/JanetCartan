@@ -1,0 +1,37 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalSelectedSelfIdentityTemplate
+public import JanetCartan.Iteration.PhysicalMean.OriginalSelectedHermitianEstimates.SelectedFields
+public import JanetCartan.Iteration.PhysicalMean.OriginalSelectedHermitianEstimates.BaselineAlias
+import all JanetCartan.Iteration.PhysicalPairs.OriginalBaselineNativeProfiles
+import all JanetCartan.Iteration.PhysicalMean.OriginalSelectedHermitianEstimates.SelectedFields
+import all JanetCartan.Iteration.PhysicalMean.OriginalSelectedHermitianEstimates.BaselineAlias
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcingSelected
+import all JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcingScaled
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalBaselineApplication
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalDerivativeTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalBackgroundHermitianTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalBackgroundHermitianSupportTemplate
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+
+/-!
+# The original complete amplitude meets the same full native field
+
+Combine the original outer baseline and the whole source before squaring.
+The unchanged amplitude equality depends on the original selected fields and
+baseline identity, independently of the subsequent full-self chart identity.
+Consumer: `observed_self_on_chart` in `main:eq:self-off` and `main:prop:pairs`.
+-/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+
+identify_original_selected_full_self 0
+
+#print axioms JanetCartan.PhysicalPairs.OriginalSelectedSelfIdentity.amplitude_eq_full_native

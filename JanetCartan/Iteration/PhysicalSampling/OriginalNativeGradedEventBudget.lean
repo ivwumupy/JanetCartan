@@ -1,0 +1,33 @@
+module
+
+public import JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventBudget
+public import JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalPhysicalResponse
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+
+/-! Actual native full-matrix derivative cost chosen under one early σ before
+any physical R₀, history, color or shift (`new:sec:order-of-choices`). -/
+
+@[expose] public noncomputable section
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option backward.isDefEq.respectTransparency false
+set_option Elab.async false
+set_option maxRecDepth 32000
+set_option maxHeartbeats 2800000
+
+fix_original_quantitative_sampling_budget 0
+fix_original_quantitative_sampling_budget 1
+fix_original_quantitative_sampling_budget 2
+fix_original_quantitative_sampling_budget 3
+fix_original_quantitative_sampling_budget 4
+fix_original_quantitative_sampling_budget 5
+fix_original_quantitative_sampling_budget 6
+fix_original_quantitative_sampling_budget 7

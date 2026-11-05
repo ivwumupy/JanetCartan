@@ -1,0 +1,47 @@
+module
+
+public import JanetCartan.Iteration.PhysicalMean.OriginalMeanLinearEstimates
+public import JanetCartan.Iteration.PhysicalMean.OriginalMeanLinearSamplingTemplate
+public import JanetCartan.Iteration.PhysicalMean.OriginalCanonicalRowActualBridge
+public import JanetCartan.Iteration.PhysicalMean.OriginalMeanQuadraticRealization
+import all JanetCartan.Iteration.PhysicalMean.OriginalMeanLinearSamplingTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalMeanQuadraticRealization
+public meta import JanetCartan.Iteration.PhysicalMean.OriginalMeanLinearSamplingTemplate
+
+/-!
+# The unchanged original finite sampled normal
+
+The one common selected event is summed before normalization. Its original
+full-angular outer raw row, including zero-weight labels, is identified with
+that same finite sampled family. The uncut global auxiliary is retained
+literally from the global-current transport. The fixed prefix and observation
+shift are chosen before Picard iteration. No low/high source success or
+normal-error bound is an input (`app:ch_mean_pairs:eq:mean-stage-normal-errors`).
+-/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+set_option backward.isDefEq.respectTransparency false
+
+publish_original_selected_deviation
+publish_original_inner_sampling_normal
+publish_original_outer_patch
+publish_original_sampled_normal
+publish_original_global_mean_component 0
+publish_original_global_mean_component 1
+publish_original_global_mean_join
+publish_original_global_sampling_error
+
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.sampling_deviation
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.inner_sampling_error
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.outer_patch_eq_inner
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.sampled_normal_eq_inner
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.actual_sampling_error
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.sampledNormal
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.Csample
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.pointwise_corrected_eq_event
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.auxiliary_eq_event
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.global_corrected_eq_event
+#print axioms JanetCartan.PhysicalMean.OriginalMeanLinearSampling.sampling_error

@@ -1,0 +1,29 @@
+module
+
+public import JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRows
+public import JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+
+/-! The same original before-history source39 and common-event fixed constants
+admit all native high/source regularity estimates without varying the physical
+parameters after R₀ (`app:ch_response:cor:current-atoms`). -/
+
+@[expose] public noncomputable section
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option backward.isDefEq.respectTransparency false
+set_option Elab.async false
+set_option maxRecDepth 32000
+set_option maxHeartbeats 2800000
+
+choose_original_native_smooth_threshold 0
+choose_original_native_smooth_threshold 1
+choose_original_native_smooth_threshold 2
+choose_original_native_smooth_threshold 3

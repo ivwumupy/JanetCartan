@@ -1,0 +1,12 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalSelectedSourceProfilesTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalSelectedSourceEstimates
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcingSelected
+import all JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcingScaled
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+profile_original_selected_physical_source

@@ -1,0 +1,10 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalUniformStageSizeTemplate
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+define_original_uniform_stage_size_price
+prove_original_uniform_stage_size 0
+prove_original_uniform_stage_size 1
+prove_original_uniform_stage_size 2

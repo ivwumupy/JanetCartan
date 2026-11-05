@@ -1,0 +1,26 @@
+module
+
+public import JanetCartan.Iteration.PhysicalSampling.OriginalActualEventBudget
+public import JanetCartan.Iteration.PhysicalSampling.OriginalNativeTesterBudgetsApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeTesterBudgetsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalActualEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+
+/-! Exact bare46 tester costs before R₀ on the actual single-cap original
+stage; no repeated testing operator or lower bound for a sample weight. -/
+@[expose] public noncomputable section
+set_option warningAsError true
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option Elab.async false
+set_option maxRecDepth 32000
+set_option maxHeartbeats 1800000
+set_option backward.isDefEq.respectTransparency false
+retain_native_original_tester_costs 44
+retain_native_original_tester_costs 33

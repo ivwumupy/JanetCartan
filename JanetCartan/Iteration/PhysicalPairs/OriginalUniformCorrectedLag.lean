@@ -1,0 +1,9 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalUniformCorrectedLagTemplate
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+prove_original_uniform_corrected_lag 0
+prove_original_uniform_corrected_lag 1
+prove_original_uniform_corrected_lag 2

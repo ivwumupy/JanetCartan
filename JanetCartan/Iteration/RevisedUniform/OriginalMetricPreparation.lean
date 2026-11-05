@@ -1,0 +1,49 @@
+module
+public import JanetCartan.Iteration.RevisedUniform.OriginalMetricPreparationTemplate
+import all JanetCartan.Iteration.RevisedUniform.OriginalMetricPreparationTemplate
+import all JanetCartan.Iteration.RevisedUniform.OriginalSelectedPrehistoryTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalStaticReach
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalInverseProfilesTemplate
+import all JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcing
+import all JanetCartan.Iteration.PhysicalMean.OriginalCompleteForcingScaled
+import all JanetCartan.Iteration.PhysicalSampling.OriginalJointEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonStageApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalJointResponseRegularityTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalLocalWaveGeometryTemplate
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalComparisonCurrentApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+
+/-!
+# The actual arbitrary-metric preparation for the original seed
+
+Only dimension, its admissibility, and the originally given metric/domain
+precede the choices. There is no remaining physical menu. The normalization,
+common positive physical/chart interval and original reference/core are the
+unchanged ones of `main:prop:seed`. Actual smoothing stage reach is constructed
+from both original tails before every history (`main:eq:metric-two-errors`).
+The local metric consequence is still explicitly conditional on the genuine
+uniform history correction; neither that correction nor Main is asserted here.
+-/
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+set_option backward.isDefEq.respectTransparency false
+
+prepare_original_dimension_metric 0
+prepare_original_dimension_metric 1
+prepare_original_dimension_metric 2
+prepare_original_dimension_metric 3
+prepare_original_dimension_metric 4
+prepare_original_dimension_metric 5
+prepare_original_dimension_metric 6

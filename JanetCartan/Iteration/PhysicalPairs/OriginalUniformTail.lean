@@ -1,0 +1,9 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalUniformTailTemplate
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+prove_original_uniform_tail 0
+prove_original_uniform_tail 1
+prove_original_uniform_tail 2

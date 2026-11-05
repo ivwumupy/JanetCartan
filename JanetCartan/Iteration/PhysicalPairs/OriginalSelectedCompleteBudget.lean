@@ -1,0 +1,10 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalSelectedCompleteBudgetTemplate
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalMean.OriginalMeanLinearSampling
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+define_original_selected_complete_budget 0
+define_original_selected_complete_budget 1

@@ -1,0 +1,47 @@
+module
+
+public import JanetCartan.Iteration.PhysicalMean.OriginalCanonicalCurrentApplication
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalCurrentApplication
+import all JanetCartan.Iteration.PhysicalMean.OriginalMeanLinearProfilesTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalJointEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonStageApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalJointResponseRegularityTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalLocalWaveGeometryTemplate
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalComparisonCurrentApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+
+/-!
+# The one actual global mean Q0 and its smooth source action
+
+These are exact specializations of the global admission39 current already used
+by the positive scalar. They are not the per-row comparison inverse. The same
+coefficient, fixed masks, continuum carriers and Q0 supply the linear,
+quadratic and finite Picard constructions (`new:sec:mean-source-equation`).
+-/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+set_option backward.isDefEq.respectTransparency false
+
+construct_actual_canonical_current 0
+construct_actual_canonical_current 1
+construct_actual_canonical_current 2
+construct_actual_canonical_current 3
+construct_actual_canonical_current 4
+construct_actual_canonical_current 5
+construct_actual_canonical_current 6
+construct_actual_canonical_current 7
+construct_actual_canonical_current 8
+construct_actual_canonical_current 9
+construct_actual_canonical_current 10

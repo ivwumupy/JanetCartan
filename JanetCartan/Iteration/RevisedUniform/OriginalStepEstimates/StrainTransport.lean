@@ -1,0 +1,31 @@
+module
+
+public import JanetCartan.Iteration.RevisedUniform.OriginalStepEstimates.StrainInput
+public import JanetCartan.Iteration.RevisedUniform.OriginalStepFields.PrimaryCurrent
+public meta import JanetCartan.Iteration.RevisedUniform.OriginalStepEstimates.StrainTransportTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.StrainStatement
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalFullSourcePhysicalPrimaryStatement
+import all JanetCartan.Iteration.PhysicalMean.OriginalSelectedMeanData
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareScale
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+
+/-! # The actual current/core conversion for the original primary strain
+
+Only the exact raw strain remains explicit here. Its actual producer is
+`OriginalSelectedPrimaryStrain.strain_bound`, supplied by the final step.
+The current equality and core containment are original proved outputs.
+-/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+
+transport_original_primary_strain_input
+
+#print axioms JanetCartan.RevisedUniform.OriginalStepEstimates.primary_strain_input_of_raw

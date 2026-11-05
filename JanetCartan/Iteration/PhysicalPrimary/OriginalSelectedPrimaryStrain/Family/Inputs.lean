@@ -1,0 +1,39 @@
+module
+
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.Labels
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.ObservedLabels
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.SourceData
+public import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.PhaseProfiles
+public meta import JanetCartan.Iteration.PhysicalPrimary.OriginalSelectedPrimaryStrain.FamilyTemplate
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+import all JanetCartan.Iteration.PhysicalMean.OriginalCanonicalMomentAdmissionTemplate
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+
+/-! # The actual primary source family before localization estimates
+
+The full original label retains its history, complete-forcing iterate,
+original sample and quadrature. Its operator index, ordinary frequency,
+inverse input, discrepancy and support are fixed here before applying the
+analytic phase/amplitude estimates (`main:eq:primary-strain`).
+-/
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+
+publish_actual_primary_source_family 0
+publish_actual_primary_source_family 1
+publish_actual_primary_source_family 2
+publish_actual_primary_source_family 3
+publish_actual_primary_source_family 11
+publish_actual_primary_source_family 4
+publish_actual_primary_source_family 6
+publish_actual_primary_source_family 10
+
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Family.historyMap
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Family.input
+#print axioms JanetCartan.PhysicalPrimary.OriginalSelectedPrimaryStrain.Family.support

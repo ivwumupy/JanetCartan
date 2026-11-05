@@ -1,0 +1,12 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalUniformFirstMaskTemplate
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+prove_original_uniform_first_mask 0
+prove_original_uniform_first_mask 1
+prove_original_uniform_first_mask 2
+prove_original_uniform_first_mask 3
+prove_original_uniform_first_mask 4
+prove_original_uniform_first_mask 5

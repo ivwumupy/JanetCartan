@@ -1,0 +1,19 @@
+module
+public import JanetCartan.Iteration.PhysicalPairs.CombinedNode
+public import JanetCartan.Iteration.PhysicalPairs.OriginalAngularJets
+public import JanetCartan.Iteration.PhysicalMean.OriginalParentCorrectedProfiles
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalBaselineNodeTemplate
+/-! The exact unscaled positive-baseline amplitude proposition. Its proof is
+checked separately, with the same original outer support and parent matrix. -/
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+publish_original_baseline_amplitude 0

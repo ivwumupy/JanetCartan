@@ -1,0 +1,25 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalUniformSizeSelectionTemplate
+import all JanetCartan.Iteration.PhysicalPairs.OriginalSizeSelection
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+select_original_uniform_size 0
+select_original_uniform_size 1
+select_original_uniform_size 2
+select_original_uniform_size 3
+select_original_uniform_size 4
+select_original_uniform_size 5
+select_original_uniform_size 6
+select_original_uniform_size 7
+select_original_uniform_size 8
+select_original_uniform_size 9
+select_original_uniform_size 10
+select_original_uniform_size 11
+select_original_uniform_size 12
+select_original_uniform_size 13
+select_original_uniform_size 14
+select_original_uniform_size 15
+select_original_uniform_size 16
+select_original_uniform_size 17

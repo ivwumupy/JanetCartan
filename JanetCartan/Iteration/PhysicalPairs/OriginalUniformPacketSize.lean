@@ -1,0 +1,9 @@
+module
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalUniformPacketSizeTemplate
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+prove_original_uniform_packet_size 0
+prove_original_uniform_packet_size 1
+prove_original_uniform_packet_size 2

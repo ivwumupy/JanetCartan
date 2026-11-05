@@ -1,0 +1,9 @@
+module
+public import JanetCartan.Iteration.PhysicalMean.OriginalSelectedMeanData
+import all JanetCartan.Iteration.PhysicalMean.OriginalSelectedMeanRegularityTemplate
+open Set Metric
+open scoped ContDiff Matrix.Norms.Frobenius JanetCartan.TensorFrobenius
+set_option warningAsError true
+set_option Elab.async false
+
+prove_original_selected_initialized_smooth

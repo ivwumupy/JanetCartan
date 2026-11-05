@@ -1,0 +1,43 @@
+module
+
+public import JanetCartan.Iteration.PhysicalMean.OriginalCanonicalInverseProfilesTemplate
+public import JanetCartan.Iteration.PhysicalMean.OriginalCanonicalCurrent
+import all JanetCartan.Iteration.PhysicalSampling.OriginalJointEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeGradedEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSmoothEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeSourceRowsApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalNativeInitialEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalBareEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalPositiveEventApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonStageApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalCommonThresholdApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredFamilyApplication
+import all JanetCartan.Iteration.PhysicalSampling.OriginalMeasuredCurrentApplication
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalJointResponseRegularityTemplate
+import all JanetCartan.Iteration.PhysicalPrimary.OriginalLocalWaveGeometryTemplate
+import all JanetCartan.Iteration.PhysicalNormalInverse.OriginalComparisonCurrentApplication
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+public meta import JanetCartan.Iteration.PhysicalMean.OriginalCanonicalInverseProfilesTemplate
+
+/-!
+# The actual inverse source constants and global inverse identity
+
+All input data are the original native event; the source-only estimates use
+the same global inverse as the finite mean-source iteration
+(new:sec:mean-source-equation, new:eq:source-bound).
+-/
+
+@[expose] public noncomputable section
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+
+publish_actual_inverse_source_budget
+publish_actual_inverse_source_identity
+publish_actual_inverse_source_profile 0
+publish_actual_inverse_source_profile 1
+publish_actual_inverse_source_profile 2
+publish_actual_inverse_source_profile 3
+publish_actual_inverse_source_profile 4
+end

@@ -1,0 +1,9 @@
+module
+public import JanetCartan.Iteration.PhysicalPairs.OriginalSelectedCompleteProfiles
+public meta import JanetCartan.Iteration.PhysicalPairs.OriginalSelectedCompleteProfilesTemplate
+import all JanetCartan.Iteration.PhysicalBackground.CanonicalDensity
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option warningAsError true
+set_option Elab.async false
+admit_original_selected_complete_waves
